@@ -45,14 +45,18 @@ h6 {
 
 .row-parent {
     flex-direction: row;
-    flex-wrap: wrap;
     display: flex;
-    background-color: grey
 }
 
 .mobile-image {
     min-height: 440px;
     height: 70vh;
+}
+
+.radio-label {
+    padding-left: 25px;
+    display: block;
+    font-size: 16px;
 }
 
 .info-inner {
@@ -62,6 +66,10 @@ h6 {
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+.radio-group-row {
+    padding: 0 25px;
 }
 
 .text-content {
@@ -89,7 +97,7 @@ h6 {
 .backdrop {
     background-color: #EB6D47;
     height: calc(100vh - 140px);
-    min-height: 768px;
+    min-height: 540px;
     display: flex;
 }
 
@@ -163,17 +171,33 @@ footer {
     height: 50px;
     width: 50%;
     font-size: 18px;
+    outline: none;
 }
 
-.button:hover {
+.button:active:focus, .button:focus {
+    background-color: #EB6D47;
+    border-color: white;
+    outline: none; 
+}
+
+.button:active:focus {
     background-color: white;
     color: #EB6D47;
     border: none;
+    outline: none;
 }
+
+.button:hover, .button:active, .button:active:hover {
+    background-color: white;
+    color: #EB6D47;
+    border: none;
+    outline: none;
+}
+
 
 .form-content {
     flex: 1;
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
     align-self: stretch;
     flex-direction: column;
@@ -182,9 +206,30 @@ footer {
 }
 
 .flex-center {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
+}
+
+.inline {
+    display: inline-block
+}
+
+.text-right {
+    text-align: right;
+}
+
+.logo {
+    justify-content: flex-start;
+    padding-left: 32px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.left {
+    float: left;
 }
 
 @media(max-width:768px) {
@@ -197,14 +242,23 @@ footer {
         font-size: 2em;
     }
 
-    .logo, .navbar, .flex-center {
+    .logo, .navbar, .flex-center, .row-parent {
         width: 100vw;
         flex-wrap: wrap;
     } 
+
+    .logo {
+        justify-content: center;
+    }
     
     .title-text {
         padding: 20px;
         padding-bottom: 40px;
         text-align: center;
+    }
+
+    .text-input {
+        width: 80%;
+        font-size: 20px;
     }
 }
