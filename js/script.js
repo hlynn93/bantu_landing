@@ -38,7 +38,7 @@ function validateEmail(email) {
 function sendRequest(successCallback){
     const apiKey = "$2y$10$kvyRe67FHwglsIhoz4oype0nsC0GKSwTycBrVniR49bSCthrCBgby"
     const url = "http://platform.bantu.life/api/v1/addEmail?apikey=" + apiKey
-    var request = $.post( url, function() {
+    var request = $.post( url, { email: email, option: type } , function() {
         successCallback()
     })
     .done(function() {
