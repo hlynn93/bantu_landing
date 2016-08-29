@@ -13,8 +13,10 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
     <!-- Custom CSS -->
-
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/sweetalert.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
 </head>
@@ -88,7 +90,17 @@
 
     <!-- Footer -->
     <footer>
-
+        <div class="section-wrapper footer-inner">
+            <div class="flex-center footer-text">
+                <p class="darkgrey-text"><b>Let's get in touch</b></p>
+                <p class="darkgrey-text">Check us out here to receive news and updates</p>
+            </div>
+            <div class="flex-center icons">
+                <a target="_blank" href="https://www.facebook.com/bantulife" class="icon-link"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://medium.com/ban-tu" class="icon-link"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/company/ban.tu" class="icon-link"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+            </div>
+        </div>
         <!-- /.container -->
     </footer>
 
@@ -97,6 +109,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
     <script src="js/script.js"></script>
     <script>
         var email="", type=""
@@ -105,7 +118,13 @@
             if(validateEmail(email)) {
                 showOptions()
             } else {
-                alert("Please enter a valid email address")
+                swal({   
+                    title: "Invalid email!",   
+                    text: "Please enter a valid email address!",
+                    confirmButtonColor: "#EB6D47",  
+                    type: "error",   
+                    confirmButtonText: "Got it" 
+                });
             }
         })
 

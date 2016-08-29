@@ -1,3 +1,8 @@
+h1, h2, h3, h4, h5, h6, p, label {
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
 body {
     flex: 1;
     flex-direction: 'column';
@@ -43,6 +48,14 @@ h6 {
     background-color: #EB6D47;
 }
 
+.icon-link, .icon-link:focus, .icon-link:hover {
+    color: rgba(0,0,0,0.54);
+}
+
+.icon-link:hover {
+    color: #EB6D47;
+}
+
 .row-parent {
     flex-direction: row;
     display: flex;
@@ -50,7 +63,9 @@ h6 {
 
 .mobile-image {
     min-height: 440px;
-    height: 70vh;
+    height: 75vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .radio-label {
@@ -96,7 +111,7 @@ h6 {
 
 .backdrop {
     background-color: #EB6D47;
-    height: calc(100vh - 140px);
+    /*height: calc(100vh - 140px);*/
     min-height: 540px;
     display: flex;
 }
@@ -133,7 +148,7 @@ section {
 }
 
 footer {
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 .right {
@@ -142,6 +157,11 @@ footer {
 
 .white-text {
     color: white 
+}
+
+.copyright {
+    align-self: center;
+    vertical-align: center
 }
 
 .grey-text {
@@ -230,6 +250,31 @@ footer {
 
 .left {
     float: left;
+}
+
+.icon-link {
+    padding: 0 20px;
+    margin: 0
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.copyright, .icons {
+    flex: 1;
+    flex-wrap: wrap
+}
+
+.footer-text {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.darkgrey-text {
+    color: rgba(0,0,0,0.54)
 }
 
 @media(max-width:768px) {
