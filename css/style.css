@@ -1,6 +1,6 @@
 h1, h2, h3, h4, h5, h6, p, label {
-    font-family: 'Open Sans', sans-serif;
-    /* font-family: 'Raleway', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Raleway', sans-serif; 
 }
 
 body {
@@ -110,7 +110,12 @@ h6 {
 }
 
 .backdrop {
-    background-color: #EB6D47;
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url('../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     /*height: calc(100vh - 140px);*/
     min-height: 540px;
     display: flex;
@@ -156,7 +161,7 @@ footer {
 }
 
 .white-text {
-    color: white 
+    color: rgba(255,255,255,0.87) 
 }
 
 .copyright {
@@ -187,7 +192,7 @@ footer {
     background-color: #EB6D47;
     border-radius: 10px;
     border-width: 2px;
-    border-color: white;
+    border-color: rgba(255,255,255,0.87);
     height: 50px;
     width: 50%;
     font-size: 18px;
@@ -196,7 +201,7 @@ footer {
 
 .button:active:focus, .button:focus {
     background-color: #EB6D47;
-    border-color: white;
+    border-color: rgba(255,255,255,0.87);
     outline: none; 
 }
 
