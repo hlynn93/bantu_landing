@@ -26,26 +26,42 @@ h4 {
 }
 
 h5 {
-    font-size: 2em
+    font-size: 2em;
+    line-height: 1.2em;
 }
 
 h6 {
-    font-size: 1.4em
+    font-size: 1.4em;
+    line-height: 1.4em;
 }
 
 .section-wrapper {
     max-width: 1200px;
     margin:auto;
+    padding: 20px;
+}
+
+.grid-section {
+    max-width: 920px;
+    margin: auto;
 }
 
 .block {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.i-m-scrollable-stuff {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 .bg-orange {
     background-color: #EB6D47;
+}
+
+.bg-pink {
+    background-color: #FF6666;
 }
 
 .icon-link, .icon-link:focus, .icon-link:hover {
@@ -56,16 +72,12 @@ h6 {
     color: #EB6D47;
 }
 
-.row-parent {
-    flex-direction: row;
-    display: flex;
-}
-
 .mobile-image {
     min-height: 440px;
     height: 75vh;
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 20px;
 }
 
 .radio-label {
@@ -76,7 +88,6 @@ h6 {
 
 .info-inner {
     flex: 1;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -89,7 +100,6 @@ h6 {
 
 .text-content {
     flex: 1;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -97,16 +107,36 @@ h6 {
     text-align: center;
 }
 
+.text-center {
+    text-align: center
+}
+
+.logo-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .navbar {
-    min-height: 140px;
+    min-height: 100px;
+    max-width: 1200px;
+    width: 100%;
     background-color: white;
     flex: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     border: none;
-    margin-bottom: 0;
+    margin: auto;
+}
+
+.navbar-header {
+    margin: 0;
+}
+
+.main-title {
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .backdrop {
@@ -117,8 +147,39 @@ h6 {
     background-size: cover;
     background-repeat: no-repeat;
     /*height: calc(100vh - 140px);*/
-    min-height: 540px;
+    min-height: 720px;
     display: flex;
+}
+
+.volunteer-cell {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(
+                     rgba(20,20,20, .2), 
+                     rgba(20,20,20, .2)),
+                     url('../img/volunteer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+
+}
+
+.college-cell {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(
+                     rgba(20,20,20, .2), 
+                     rgba(20,20,20, .2)),
+                     url('../img/college.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+}
+
+.cell-content {
+    display: block;
+    margin: auto;
+    width: 280px;
 }
 
 .image-bg-fluid-height {
@@ -164,6 +225,16 @@ footer {
     color: rgba(255,255,255,0.87) 
 }
 
+.title-section {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.grey-background {
+    background-color: #EAEAEA;
+}
+
 .copyright {
     align-self: center;
     vertical-align: center
@@ -177,8 +248,62 @@ footer {
     font-weight: bold
 }
 
+.mobile-pic {
+    width: 100%;
+    padding: 12%;
+}
+
+.second-title {
+    padding-right: 20%;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.card-wrapper {
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid grey;
+    padding: 20px;
+    text-align: center;
+    min-height: 350px;
+}
+
+.card-top {
+    height: 128px;
+    padding-top: 32px;
+}
+
+
+.block-center {
+    display: block;
+    margin: auto;
+}
+
 .item-margin {
     margin-top: 20px;
+}
+
+.item-margin-l {
+    margin-top: 40px !important;
+}
+
+.item-margin-xl {
+    margin-top: 50px !important;
+}
+
+.item-padding {
+    padding-top: 20px;
+}
+
+.item-padding-xl {
+    padding-top: 50px;
+}
+
+.no-margin {
+    margin: 0
 }
 
 .text-input {
@@ -222,7 +347,6 @@ footer {
 
 .form-content {
     flex: 1;
-    display: flex !important;
     flex-wrap: wrap;
     align-self: stretch;
     flex-direction: column;
@@ -231,9 +355,42 @@ footer {
 }
 
 .flex-center {
-    display: flex !important;
     align-items: center;
     justify-content: center;
+}
+
+.white-button {
+    background-color: transparent;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: rgba(255,255,255,0.87);
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    outline: none;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.white-button:active:focus, .white-button:focus {
+    background-color: transparent;
+    border-color: rgba(255,255,255,0.87);
+    outline: none; 
+}
+
+.white-button:active:focus {
+    background-color: white;
+    color: #EB6D47;
+    border-color: white;
+    outline: none;
+}
+
+.white-button:hover, .white-button:active, .white-button:active:hover {
+    background-color: white;
+    color: #EB6D47;
+    border-color: white;
+    outline: none;
 }
 
 .inline {
@@ -257,6 +414,11 @@ footer {
     float: left;
 }
 
+.pad-h-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .icon-link {
     padding: 0 20px;
     margin: 0
@@ -266,6 +428,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 20px 0;
+    align-items: center;
 }
 
 .copyright, .icons {
@@ -282,6 +445,19 @@ footer {
     color: rgba(0,0,0,0.54)
 }
 
+.orange-text {
+    color: #EB6D47;
+}
+
+.red-text {
+    color: red;
+}
+
+.card-text-content {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 @media(max-width:768px) {
     section {
         padding-top: 25px;
@@ -292,8 +468,8 @@ footer {
         font-size: 2em;
     }
 
-    .logo, .navbar, .flex-center, .row-parent {
-        width: 100vw;
+    .logo, .navbar, .flex-center {
+        width: 100%;
         flex-wrap: wrap;
     } 
 
@@ -310,5 +486,23 @@ footer {
     .text-input {
         width: 80%;
         font-size: 20px;
+    }
+
+    .mobile-pic {
+        width: 100%;
+        padding: 20px 25%;
+    }
+
+    .card {
+        min-height: 0;
+    }
+    
+    .navbar-header {
+        margin: auto;
+    }
+
+    .main-title {
+        padding-left: 0;
+        padding-right: 0;
     }
 }

@@ -25,57 +25,52 @@
 
     <!-- Navigation -->
     <nav class="navbar-inverse navbar" role="navigation">
-        <div class="section-wrapper">
+        <div class="section-wrapper navbar-header">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header navbar row">
-                <div class="col-md-5 flex-center logo">
-                    <h1 class="grey-text">Bantu</h1>
-                </div>
-                <div class="col-md-8 flex-center title-text">
-                    <h5 class="grey-text">Join us in gathering small efforts for a greater purpose Reinventing charity management in Singapore</h5>
-                </div>
+            <div class="navbar">
+                <h1 class="orange-text logo-text">ban.tu</h1>
             </div>
         </div>
         <!-- /.container -->
     </nav>
 
     <header class="backdrop">
-        <div class="section-wrapper row row-parent">
-            <div class="col-md-4 block flex-center mobile">
-                <img class="mobile-image" src="img/mobile.jpg" alt="">
-            </div>
-            <div id="content-1" class="col-md-8 block flex-center info">
+        <div class="section-wrapper">
+            <div id="content-1" class="block flex-center info">
                 <div class="info-inner">
                     <div class="text-content">
-                        <h3 class="white-text item-margin"><b>GET INVOLVED TODAY!</b></h3>
-                        <h5 class="white-text item-margin"><b>Leave your email below & we will notify you once our amazing platform launches! ;)</b></h5>
-                        <h6 class="white-text item-margin"><b>(Shhhh, you'll get beta & priority access)</b></h6>
+                        <h3 class="white-text item-margin main-title"><strong>GATHERING SMALL EFFORTS FOR A GREATER PURPOSE</strong></h3>
                     </div>
                     <div id="sub-content-1" class="form item-margin form-content">
-                        <input id="email" class="form-control item-margin text-input" type="email" name="email" required placeholder="Your email here..." id="example-text-input">
-                        <button type="button" id="email-button" class="btn btn-primary item-margin button" onclick="onEmailClick()">NOTIFY ME</button>
+                        <input id="email" class="form-control item-margin text-input block-center" type="email" name="email" required placeholder="Your email here..." id="example-text-input">
+                        <button type="button" id="email-button" class="btn btn-primary white-button block-center item-margin-l" onclick="onEmailClick()">NOTIFY ME</button>
+                        <h6 class="white-text item-margin-l text-center"><b>(Shhhh, you'll get beta & priority access)</b></h6>
                     </div>
                     <div id="sub-content-2" class="form item-margin form-content hidden">
-                        <h3 class="white-text item-margin text-right ">I am: </h3>
-                        <div class="column radio-group-row">
+                        <div class="row radio-group-row">
+                            <h6 class="text-center white-text"><strong>I BELONG TO A SINGAPORE UNIVERSITY / COLLEGE:</strong></h6>
                             <div class="col-md-6">
-                                <div class="">
-                                    <input type="radio" class="left" name="type" value="organization" checked>
-                                    <label for="organization" class="white-text item-margin radio-label">An organization with non-profit campaigns</label>
+                                <div class="right">
+                                    <div>
+                                        <input type="radio" class="left" name="type" value="yes" checked>
+                                        <label for="yes" class="white-text item-margin radio-label">Yes</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="">
-                                    <input type="radio" class="left" name="type" value="volunteer">
-                                    <label for="organization" class="white-text item-margin radio-label">Someone interested in volunteering my time</label>
+                                    <div>
+                                        <input type="radio" class="left" name="type" value="no">
+                                        <label for="no" class="white-text item-margin radio-label">No</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <button type="button" id="done-button" class="btn btn-primary item-margin button">Done</button>
+                        <button type="button" id="done-button" class="btn btn-primary item-margin white-button">Done</button>
                     </div>
                 </div>
             </div>
-            <div id="content-2" class="col-md-8 block flex-center info hidden">
+            <div id="content-2" class="block flex-center info hidden">
                 <div class="info-inner">
                     <div class="text-content">
                         <h3 class="white-text item-margin"><b>THANK YOU FOR SIGNING UP!</b></h3>
@@ -87,15 +82,87 @@
             </div>
         </div>
     </header>
+    <section class="">
+        <div class="section-wrapper">
+            <div class="title-section">
+                <h4 class="text-center"><strong>What is ban.tu?</strong></h4>
+                <h6>Join us in gathering small efforts for a greater purpose
+                    as we reinvent charity management in Singapore</h5>
+            </div>
+            <div class="row item-margin">
+                <div class="col-sm-4 card-wrapper">
+                    <div class="card">
+                        <div class="card-top">
+                            <h2 class="orange-text text-center no-margin">ban.tu</h2>
+                        </div>
+                        <h6 class="darkgrey-text item-margin">
+                            was a name inspired by the Malay phrase “untuk membantu”, which translate as “to help”.
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-sm-4 card-wrapper">
+                    <div class="card">
+                        <div class="card-top">
+                            <i class="fa fa-users fa-5x orange-text" aria-hidden="true"></i>
+                        </div>
+                        <h6 class="darkgrey-text item-margin">
+                            The ban.tu mission is simple: to bring together good work and good people who are passionately involved in the causes they champion. 
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-sm-4 card-wrapper">
+                    <div class="card">
+                        <div class="card-top">
+                            <i class="fa fa-link fa-5x orange-text" aria-hidden="true"></i>
+                        </div>
+                        <h6 class="darkgrey-text item-margin">
+                            Good people should stay connected & engaged with the groups they are volunteering their time with – and we provide VWOs the platform to do so.
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="section-wrapper">
+            <div class="row item-margin second-title-wrapper">
+                <div class="col-sm-8 card-wrapper ">
+                    <div class="second-title">
+                        <h3><strong>We know you're busy in school...</strong></h3>
+                        <h6>but you want to contribute to the causes you care for</h6>
+                    </div>
+                    <div class="card">
+                        <i class="fa fa-heart fa-5x red-text item-margin" aria-hidden="true"></i>
+                        <div class="card-text-content">
+                            <h6 class='text-center item-margin'>The ban.tu way is to remain up close and personal with the social causes you spend your Sunday afternoons at.</h6>
+                            <br>
+                            <h6 class="text-center">Everything is made better when you have a real relationship with the people & places you truly care about.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 card-wrapper">
+                    <img src="img/mobile.jpg" class="mobile-pic" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-pink">
+        <div class="section-wrapper text-center white-text">
+            <div class="i-m-scrollable-stuff">
+                <h2 class="pad-h-20"><strong>We're all different in the causes we care about...</strong></h2>
+                <h5>but we have the same heart to help others. We can help you to stay connected to your causes and meet other awesome people just like you!</h5>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <div class="section-wrapper footer-inner">
-            <div class="flex-center footer-text">
+            <div class="text-center footer-text">
                 <p class="darkgrey-text"><b>Let's get in touch</b></p>
                 <p class="darkgrey-text">Check us out here to receive news and updates</p>
             </div>
-            <div class="flex-center icons">
+            <div class="block-center icons">
                 <a target="_blank" href="https://www.facebook.com/bantulife" class="icon-link"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
                 <a target="_blank" href="https://medium.com/ban-tu" class="icon-link"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a>
                 <a target="_blank" href="https://www.linkedin.com/company/ban.tu" class="icon-link"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
