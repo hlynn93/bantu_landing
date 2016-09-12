@@ -1,6 +1,26 @@
 h1, h2, h3, h4, h5, h6, p, label {
-    /* font-family: 'Open Sans', sans-serif; */
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Open Sans', sans-serif; 
+    /*font-family: 'Raleway', sans-serif; */
+}
+
+@font-face {
+	font-family: 'nevis';
+	src: url('nevis-Bold.eot');
+	src: url('nevis-Bold.eot?#iefix') format('embedded-opentype'),
+		url('nevis-Bold.woff') format('woff'),
+		url('nevis-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Beyond The Mountains';
+	src: url('../fonts/BeyondTheMountains.eot');
+	src: url('../fonts/BeyondTheMountains.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BeyondTheMountains.woff') format('woff'),
+		url('../fonts/BeyondTheMountains.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
@@ -462,6 +482,14 @@ footer {
 .card-text-content {
     padding-left: 15%;
     padding-right: 15%;
+}
+
+strong {
+    font-family: 'nevis';
+}
+
+.logo-font {
+    font-family: 'Beyond The Mountains'
 }
 
 .shrink-mobile {
