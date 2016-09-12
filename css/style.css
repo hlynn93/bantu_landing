@@ -31,8 +31,8 @@ h5 {
 }
 
 h6 {
-    font-size: 1.4em;
-    line-height: 1.4em;
+    font-size: 1.2em;
+    line-height: 1.2em;
 }
 
 .section-wrapper {
@@ -250,7 +250,7 @@ footer {
 
 .mobile-pic {
     width: 100%;
-    padding: 12%;
+    padding: 20px 16%;
 }
 
 .second-title {
@@ -268,7 +268,13 @@ footer {
     border: 1px solid grey;
     padding: 20px;
     text-align: center;
-    min-height: 350px;
+    min-height: 300px;
+}
+
+.card-scroll {
+    background-color: white;
+    border: 1px solid grey;
+    text-align: center;
 }
 
 .card-top {
@@ -458,6 +464,10 @@ footer {
     padding-right: 15%;
 }
 
+.shrink-mobile {
+    font-weight: bold;
+}
+
 @media(max-width:768px) {
     section {
         padding-top: 25px;
@@ -504,5 +514,53 @@ footer {
     .main-title {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .shrink-mobile {
+        font-size: 0.8em;
+    }
+
+    .i-m-scrollable-stuff {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.credit-section {
+    margin-top: 50px;
+    height: 300px;
+    overflow: hidden;
+    position: relative
+}
+
+.credit-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    animation: 20s credits linear infinite;
+}
+
+/* rgba(255,102,102, 0.5)  */
+.gradient-overlay {
+    background: linear-gradient(rgba(255,102,102, 0.3), transparent, rgba(255,102,102, 0.3));
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+@keyframes credits {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -200%;
     }
 }
