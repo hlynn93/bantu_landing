@@ -1,18 +1,18 @@
-h1, h2, h3, h4, h5, h6, p, label {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300; 
-    /*font-family: 'Raleway', sans-serif; */
+* {
+    font-family: 'Open Sans', sans-serif; 
 }
 
 @font-face {
-	font-family: 'nevis';
-	src: url('nevis-Bold.eot');
-	src: url('nevis-Bold.eot?#iefix') format('embedded-opentype'),
-		url('nevis-Bold.woff') format('woff'),
-		url('nevis-Bold.ttf') format('truetype');
+	font-family: 'Nevis';
+	src: url('../fonts/nevis.eot');
+	src: url('../fonts/nevis.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/nevis.woff2') format('woff2'),
+		url('../fonts/nevis.woff') format('woff'),
+		url('../fonts/nevis.svg#nevis-Bold') format('svg');
 	font-weight: bold;
 	font-style: normal;
 }
+
 
 @font-face {
 	font-family: 'Beyond The Mountains';
@@ -54,6 +54,7 @@ h5 {
 h6 {
     font-size: 1.2em;
     line-height: 1.8em;
+    font-weight: 300;
 }
 
 .section-wrapper {
@@ -467,8 +468,8 @@ footer {
     padding-right: 15%;
 }
 
-strong {
-    font-family: 'nevis';
+.nevis {
+    font-family: 'Nevis';
 }
 
 .logo-font {
@@ -477,7 +478,7 @@ strong {
 
 .shrink-mobile {
     font-weight: bold;
-    font-family: 'nevis'
+    font-family: 'Nevis'
 }
 
 .no-pad-top {
