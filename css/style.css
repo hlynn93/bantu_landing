@@ -1,5 +1,6 @@
 h1, h2, h3, h4, h5, h6, p, label {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; 
     /*font-family: 'Raleway', sans-serif; */
 }
 
@@ -52,7 +53,7 @@ h5 {
 
 h6 {
     font-size: 1.2em;
-    line-height: 1.2em;
+    line-height: 1.8em;
 }
 
 .section-wrapper {
@@ -171,31 +172,6 @@ h6 {
     display: flex;
 }
 
-.volunteer-cell {
-    width: 100%;
-    height: 300px;
-    background: linear-gradient(
-                     rgba(20,20,20, .2), 
-                     rgba(20,20,20, .2)),
-                     url('../img/volunteer.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 70px;
-
-}
-
-.college-cell {
-    width: 100%;
-    height: 300px;
-    background: linear-gradient(
-                     rgba(20,20,20, .2), 
-                     rgba(20,20,20, .2)),
-                     url('../img/college.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 70px;
-}
-
 .cell-content {
     display: block;
     margin: auto;
@@ -270,13 +246,13 @@ footer {
 
 .mobile-pic {
     width: 100%;
-    padding: 20px 16%;
+    padding: 10px 14%;
 }
 
 .second-title {
     padding-right: 20%;
     margin-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 .card-wrapper {
@@ -288,13 +264,14 @@ footer {
     border: 1px solid grey;
     padding: 20px;
     text-align: center;
-    min-height: 300px;
+    min-height: 320px;
 }
 
 .card-scroll {
     background-color: white;
     border: 1px solid grey;
     text-align: center;
+    padding-top: 2px;
 }
 
 .card-top {
@@ -337,6 +314,8 @@ footer {
     width: 60%;
     height: 50px;
     font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 .button {
@@ -450,6 +429,10 @@ footer {
     margin: 0
 }
 
+footer {
+    margin: 0;
+}
+
 .footer-inner {
     display: flex;
     flex-direction: column;
@@ -494,6 +477,11 @@ strong {
 
 .shrink-mobile {
     font-weight: bold;
+    font-family: 'nevis'
+}
+
+.no-pad-top {
+    padding-top: 0;
 }
 
 @media(max-width:768px) {
@@ -582,6 +570,10 @@ strong {
     top: 0;
     bottom: 0;
     z-index: 1;
+}
+
+.dark-text {
+    color: black;
 }
 
 @keyframes credits {
