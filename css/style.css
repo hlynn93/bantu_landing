@@ -138,6 +138,10 @@ h6 {
     margin-bottom: 0;
 }
 
+.type-class {
+    margin: -20px 0 10px 0
+}
+
 .navbar {
     min-height: 100px;
     max-width: 1200px;

@@ -43,16 +43,34 @@
                     <br>
                     <div id="sub-content-1" class="form item-margin form-content">
                         <input id="email" class="form-control item-margin text-input block-center" type="email" name="email" required placeholder="Your email here..." id="example-text-input">
-                        <button type="button" id="email-button" class="btn btn-primary white-button block-center item-margin-l" onclick="onEmailClick()">NOTIFY ME</button>
+                        <button type="button" id="email-button" class="btn btn-primary white-button block-center item-margin-l" onclick="">NOTIFY ME</button>
                         <h6 class="white-text item-margin-l text-center"><b>(Shhhh, you'll get beta & priority access)</b></h6>
                     </div>
                     <div id="sub-content-2" class="form item-margin form-content hidden">
+                        <div class="row type-class">
+                            <div class="col-md-6">
+                                <div class="right">
+                                    <div>
+                                        <input type="radio" class="left" name="type" value="volunteer" checked>
+                                        <label for="yes" class="white-text item-margin radio-label">Volunteer</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="">
+                                    <div>
+                                        <input type="radio" class="left" name="type" value="organization">
+                                        <label for="no" class="white-text item-margin radio-label">Organization</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row radio-group-row">
                             <h6 class="text-center white-text nevis">I BELONG TO A SINGAPORE UNIVERSITY / COLLEGE:</h6>
                             <div class="col-md-6">
                                 <div class="right">
                                     <div>
-                                        <input type="radio" class="left" name="type" value="yes" checked>
+                                        <input type="radio" class="left" name="relationship" value="yes" checked>
                                         <label for="yes" class="white-text item-margin radio-label">Yes</label>
                                     </div>
                                 </div>
@@ -60,7 +78,7 @@
                             <div class="col-md-6">
                                 <div class="">
                                     <div>
-                                        <input type="radio" class="left" name="type" value="no">
+                                        <input type="radio" class="left" name="relationship" value="no">
                                         <label for="no" class="white-text item-margin radio-label">No</label>
                                     </div>
                                 </div>
@@ -320,9 +338,15 @@
         })
 
         $('#done-button').click(function(){
-            type = $('input[name="type"]:checked').val();
+            type = $('input[name="type"]:checked').val() + ":" + $('input[name="relationship"]:checked').val();
             sendRequest(showFinalPage);
         })
+
+        $("#button").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#myDiv").offset().top
+            }, 1000);
+        });
 
         function showOptions() {
             $('#sub-content-1').fadeOut( "", function() {
