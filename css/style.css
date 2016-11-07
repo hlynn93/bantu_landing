@@ -165,6 +165,15 @@ h6 {
     padding-right: 20%;
 }
 
+.target-section1, .target-section2, .target-section3 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.image-padding {
+    padding: 15px;
+}
+
 .backdrop {
     background: linear-gradient(
                      rgba(20,20,20, .5), 
@@ -175,6 +184,15 @@ h6 {
     /*height: calc(100vh - 140px);*/
     min-height: 720px;
     display: flex;
+}
+
+.background-giving {
+    background: linear-gradient(
+            rgba(20,20,20, 0), 
+            rgba(20,20,20, 0)),
+            url('../img/giving.png');
+    background-size: cover;
+    min-height: 720px;
 }
 
 .cell-content {
