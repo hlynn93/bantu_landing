@@ -59,10 +59,11 @@ function sendRequest(successCallback){
     successCallback()
   })
   .done(function() {
+    alert("ok");
 
   })
   .fail(function() {
-
+    alert("test");
   })
   .always(function() {
 
