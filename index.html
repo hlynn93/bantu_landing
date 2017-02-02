@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+<html lang="en" xmlns:fb="https://ogp.me/ns/fb#">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta property="og:image" content="http://bantu.life/img/fb.png" />
+    <meta property="og:image" content="https://bantu.life/img/fb.png" />
 
     <title>Bantu</title>
     <!-- Bootstrap Core CSS -->
@@ -338,12 +338,12 @@
             if(validateEmail(email)) {
                 showOptions()
             } else {
-                swal({   
-                    title: "Invalid email!",   
+                swal({
+                    title: "Invalid email!",
                     text: "Please enter a valid email address!",
-                    confirmButtonColor: "#EB6D47",  
-                    type: "error",   
-                    confirmButtonText: "Got it" 
+                    confirmButtonColor: "#EB6D47",
+                    type: "error",
+                    confirmButtonText: "Got it"
                 });
             }
         })
@@ -380,7 +380,7 @@
 
         function sendRequest(successCallback){
             const apiKey = "$2y$10$kvyRe67FHwglsIhoz4oype0nsC0GKSwTycBrVniR49bSCthrCBgby"
-            const url = "http://platform.bantu.life/api/v1/addEmail?apikey=" + apiKey
+            const url = "https://platform.bantu.life/api/v1/addEmail?apikey=" + apiKey
             var request = $.post( url, { email: email, option: type } , function() {
                 successCallback()
             })
