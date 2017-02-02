@@ -52,11 +52,6 @@ function validateEmail(email) {
   return regex.test(email);
 }
 
-$.ajaxSetup({
-    crossDomain: true,
-});
-
-
 function sendRequest(successCallback){
   const apiKey = "$2y$10$kvyRe67FHwglsIhoz4oype0nsC0GKSwTycBrVniR49bSCthrCBgby"
   const url = "https://platform.bantu.life/api/v1/addEmail?apikey=" + apiKey
